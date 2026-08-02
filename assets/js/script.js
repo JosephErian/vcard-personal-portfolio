@@ -95,6 +95,25 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// send form via EmailJS on submit
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  formBtn.setAttribute("disabled", "");
+
+  // ponytail: replace service/template IDs with your own from emailjs.com dashboard
+  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form)
+    .then(function () {
+      alert("Message sent, thanks! I'll get back to you soon.");
+      form.reset();
+    })
+    .catch(function (error) {
+      alert("Message failed to send, please try again or email me directly.");
+      console.error("EmailJS error:", error);
+      formBtn.removeAttribute("disabled");
+    });
+});
+
 
 
 // page navigation variables

@@ -607,6 +607,53 @@ main {
   overflow: hidden;
 }
 
+.testimonials-list.single {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.testimonials-list.single .testimonials-item { min-width: 0; }
+
+.testimonials-card {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.testimonials-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.testimonials-card .testimonials-item-title { margin-bottom: 3px; }
+
+.testimonials-rating {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+}
+
+.testimonials-card .testimonials-text {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.testimonials-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+}
+
 
 /**
  * #testimonials-modal
