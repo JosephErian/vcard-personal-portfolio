@@ -1,847 +1,1072 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joseph Erian - Software Developer</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joseph Erian - Software Developer</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Joseph Erian"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Joseph Erian">Joseph Erian</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Joseph Erian" width="80">
-        </figure>
+            <p class="title">Software Developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Joseph Erian">Joseph Erian</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Software Developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:gozefatef1999@gmail.com" class="contact-link"
+                  >gozefatef1999@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Experience</p>
 
-          <li class="contact-item">
+                <span>3+ years, Full-Stack Development</span>
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-              <a href="mailto:gozefatef1999@gmail.com" class="contact-link">gozefatef1999@gmail.com</a>
-            </div>
+                <address>Stuttgart, Germany</address>
+              </div>
+            </li>
+          </ul>
 
-          </li>
+          <div class="separator"></div>
 
-          <li class="contact-item">
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/josepherian"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </div>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/joseph-erian"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Experience</p>
+            <li class="social-item">
+              <a
+                href="https://www.upwork.com/freelancers/~0177d887f43e846154"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="Upwork profile"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-7.83c-2.406 0-4.276 1.594-5.03 4.181-1.155-1.73-2.033-3.798-2.548-5.546H8.606v7.152c-.002 1.416-1.155 2.566-2.574 2.566-1.418 0-2.571-1.15-2.573-2.566V4.968H1.086v7.152c0 2.68 2.178 4.937 4.943 4.937 2.767 0 4.945-2.257 4.945-4.937v-1.197c.496 1.038 1.106 2.089 1.849 3.017l-1.573 7.404h2.482l1.139-5.361c.973.617 2.093.986 3.383.986 2.85 0 5.166-2.319 5.166-5.166.001-2.848-2.316-5.165-5.164-5.165z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-              <span>3+ years, Full-Stack Development</span>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Stuttgart, Germany</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/josepherian" target="_blank" rel="noopener noreferrer" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/joseph-erian" target="_blank" rel="noopener noreferrer" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.upwork.com/freelancers/~0177d887f43e846154" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Upwork profile">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-7.83c-2.406 0-4.276 1.594-5.03 4.181-1.155-1.73-2.033-3.798-2.548-5.546H8.606v7.152c-.002 1.416-1.155 2.566-2.574 2.566-1.418 0-2.571-1.15-2.573-2.566V4.968H1.086v7.152c0 2.68 2.178 4.937 4.943 4.937 2.767 0 4.945-2.257 4.945-4.937v-1.197c.496 1.038 1.106 2.089 1.849 3.017l-1.573 7.404h2.482l1.139-5.361c.973.617 2.093.986 3.383.986 2.85 0 5.166-2.319 5.166-5.166.001-2.848-2.316-5.165-5.164-5.165z"/>
-              </svg>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I'm a Full-Stack Developer with 3+ years of experience
+              architecting and delivering end-to-end web, mobile, and desktop
+              solutions. I work across the stack with React.js, Next.js,
+              Node.js, .NET, and cloud infrastructure, owning products from
+              architecture design through to production deployment.
+            </p>
 
-        <section class="about-text">
-          <p>
-            I'm a Full-Stack Developer with 3+ years of experience architecting and delivering end-to-end
-            web, mobile, and desktop solutions. I work across the stack with React.js, Next.js, Node.js,
-            .NET, and cloud infrastructure, owning products from architecture design through to production
-            deployment.
-          </p>
+            <p>
+              I thrive in collaborative environments and enjoy solving hard
+              problems, whether that's building a responsive web app, a
+              cross-platform mobile app with React Native, or a RESTful API
+              backed by a well-designed database. Currently based in Stuttgart,
+              Germany.
+            </p>
+          </section>
 
-          <p>
-            I thrive in collaborative environments and enjoy solving hard problems, whether that's building
-            a responsive web app, a cross-platform mobile app with React Native, or a RESTful API backed by
-            a well-designed database. Currently based in Stuttgart, Germany.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="web development icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    Building responsive, full-stack web apps with React,
+                    Next.js, Node.js, and .NET.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="web development icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Development</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile Apps</h4>
 
-                <p class="service-item-text">
-                  Building responsive, full-stack web apps with React, Next.js, Node.js, and .NET.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    Cross-platform mobile apps with React Native and Expo, for
+                    iOS and Android.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="desktop icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Desktop Apps</h4>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    Desktop applications built with .NET WPF, including
+                    CRUD-heavy line-of-business tools.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile Apps</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="API icon"
+                    width="40"
+                  />
+                </div>
 
-                <p class="service-item-text">
-                  Cross-platform mobile apps with React Native and Expo, for iOS and Android.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">APIs & Backend</h4>
 
-            </li>
+                  <p class="service-item-text">
+                    RESTful and GraphQL APIs with secure auth, backed by
+                    PostgreSQL, MongoDB, or MSSQL.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="desktop icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desktop Apps</h4>
-
-                <p class="service-item-text">
-                  Desktop applications built with .NET WPF, including CRUD-heavy line-of-business tools.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="API icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">APIs & Backend</h4>
-
-                <p class="service-item-text">
-                  RESTful and GraphQL APIs with secure auth, backed by PostgreSQL, MongoDB, or MSSQL.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list single">
+              <li class="testimonials-item">
+                <div class="testimonials-card">
+                  <div class="title-wrapper">
+                    <h4 class="h4 testimonials-item-title">Upwork Client</h4>
+                    <span class="testimonials-rating"
+                      >★★★★★ 5.0 — Aug 2024 – May 2026</span
+                    >
+                  </div>
 
-          <ul class="testimonials-list single">
+                  <div class="testimonials-text">
+                    <p>
+                      "Working with this freelancer on our web application was
+                      an absolute pleasure. From day one, it was clear we were
+                      dealing with a true professional. The code quality was
+                      exceptional — clean, well-structured, and maintainable. No
+                      shortcuts, no spaghetti. Just solid React that you're
+                      happy to build on top of. On top of that, he has a strong
+                      eye for UI/UX, consistently delivering interfaces that not
+                      only work well but actually feel great to use. What
+                      impressed us most was the speed of delivery. He hit every
+                      milestone without sacrificing quality — a combination
+                      that's rare and genuinely valuable in a freelancer. We
+                      will absolutely work with him again and wouldn't hesitate
+                      to recommend him to anyone looking for a reliable,
+                      talented React developer."
+                    </p>
+                  </div>
 
-            <li class="testimonials-item">
-              <div class="testimonials-card">
-
-                <div class="title-wrapper">
-                  <h4 class="h4 testimonials-item-title">Upwork Client</h4>
-                  <span class="testimonials-rating">★★★★★ 5.0 — Aug 2024 – May 2026</span>
+                  <a
+                    href="https://www.upwork.com/freelancers/~0177d887f43e846154"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="testimonials-link"
+                    >View on Upwork →</a
+                  >
                 </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                <div class="testimonials-text">
-                  <p>
-                    "Working with this freelancer on our web application was an absolute pleasure. From day
-                    one, it was clear we were dealing with a true professional. The code quality was
-                    exceptional — clean, well-structured, and maintainable. No shortcuts, no spaghetti. Just
-                    solid React that you're happy to build on top of. On top of that, he has a strong eye for
-                    UI/UX, consistently delivering interfaces that not only work well but actually feel great
-                    to use. What impressed us most was the speed of delivery. He hit every milestone without
-                    sacrificing quality — a combination that's rare and genuinely valuable in a freelancer. We
-                    will absolutely work with him again and wouldn't hesitate to recommend him to anyone
-                    looking for a reliable, talented React developer."
-                  </p>
-                </div>
-
-                <a href="https://www.upwork.com/freelancers/~0177d887f43e846154" target="_blank"
-                  rel="noopener noreferrer" class="testimonials-link">View on Upwork →</a>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+            <a
+              href="./assets/files/Joseph_Erian_CV_EN.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="download-cv-btn"
+            >
+              <ion-icon name="download-outline"></ion-icon>
+              <span>Download CV</span>
+            </a>
+          </header>
 
-        <section class="timeline">
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor of Science in Computer Science
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2016 — 2020</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">Beni Suef University, Egypt.</p>
+              </li>
+            </ol>
+          </section>
 
-              <h4 class="h4 timeline-item-title">Bachelor of Science in Computer Science</h4>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-              <span>2016 — 2020</span>
-
-              <p class="timeline-text">
-                Beni Suef University, Egypt.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Software Developer</h4>
 
-          <ol class="timeline-list">
+                <span
+                  >Riverbird GmbH, Germany (Remote) — Feb 2024 — Present</span
+                >
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Led end-to-end development of 5 production applications in the
+                  Riverbird RMM ecosystem for IT monitoring, inventory
+                  management, and patch management across Web, Desktop, and
+                  Mobile. Built the FalconSecure and RiverSuite mobile apps with
+                  React Native, contributed responsive UI to the Riverbird web
+                  app, and integrated frontend apps with backend REST APIs.
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Software Developer</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">IT Specialist</h4>
 
-              <span>Riverbird GmbH, Germany (Remote) — Feb 2024 — Present</span>
+                <span
+                  >PHC (Pharmaceutical Trading Company), Egypt — Oct 2022 — May
+                  2024</span
+                >
 
-              <p class="timeline-text">
-                Led end-to-end development of 5 production applications in the Riverbird RMM ecosystem
-                for IT monitoring, inventory management, and patch management across Web, Desktop, and
-                Mobile. Built the FalconSecure and RiverSuite mobile apps with React Native, contributed
-                responsive UI to the Riverbird web app, and integrated frontend apps with backend REST APIs.
-              </p>
+                <p class="timeline-text">
+                  Maintained IT infrastructure across main and secondary
+                  branches for 120+ users. Installed and configured Active
+                  Directory/DNS, biometric systems, CCTV, and FortiGate
+                  firewalls. Automated employee workflow processes to improve
+                  operational efficiency.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            </li>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-            <li class="timeline-item">
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React.js / Next.js</h5>
+                  <data value="90">90%</data>
+                </div>
 
-              <h4 class="h4 timeline-item-title">IT Specialist</h4>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-              <span>PHC (Pharmaceutical Trading Company), Egypt — Oct 2022 — May 2024</span>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">TypeScript / Node.js</h5>
+                  <data value="90">90%</data>
+                </div>
 
-              <p class="timeline-text">
-                Maintained IT infrastructure across main and secondary branches for 120+ users. Installed
-                and configured Active Directory/DNS, biometric systems, CCTV, and FortiGate firewalls.
-                Automated employee workflow processes to improve operational efficiency.
-              </p>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">.NET / C# / ASP.NET</h5>
+                  <data value="85">85%</data>
+                </div>
 
-          </ol>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
-        </section>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React Native / Expo</h5>
+                  <data value="80">80%</data>
+                </div>
 
-        <section class="skill">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-          <h3 class="h3 skills-title">My skills</h3>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL / PostgreSQL / MongoDB</h5>
+                  <data value="80">80%</data>
+                </div>
 
-          <ul class="skills-list content-card">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">AWS / Docker / Azure DevOps</h5>
+                  <data value="70">70%</data>
+                </div>
 
-              <div class="title-wrapper">
-                <h5 class="h5">React.js / Next.js</h5>
-                <data value="90">90%</data>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">TypeScript / Node.js</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">.NET / C# / ASP.NET</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">React Native / Expo</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SQL / PostgreSQL / MongoDB</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">AWS / Docker / Azure DevOps</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Mobile</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Desktop</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web</button>
+              <li class="filter-item">
+                <button data-filter-btn>EMR</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Mobile</button>
+              <li class="filter-item">
+                <button data-filter-btn>RMM</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Desktop</button>
+              <li class="filter-item">
+                <button data-filter-btn>WMS</button>
               </li>
 
+              <li class="filter-item">
+                <button data-filter-btn>Social Networking</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Retail/POS</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>EdTech</button>
+              </li>
             </ul>
 
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Riverbird-Logo-SVG.svg" alt="Riverbird Online" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Riverbird Online (Web)</h3>
-
-                <p class="project-category">Web — React, Next.js</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="desktop">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Riverbird-Logo-SVG.svg" alt="Riverbird Inventory" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Riverbird Inventory (Desktop)</h3>
-
-                <p class="project-category">Desktop — .NET WPF</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="mobile">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Riverbird-Logo-SVG.svg" alt="Riverbird Mobile" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Riverbird Mobile</h3>
-
-                <p class="project-category">Mobile — React Native, 2FA</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="mobile">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Falcon-Einzel-Logo.png" alt="Falcon-Secure Mobile" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Falcon-Secure Mobile</h3>
-
-                <p class="project-category">Mobile — React Native</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Riverbird-Logo-SVG.svg" alt="Riverbird WebService" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Riverbird WebService</h3>
-
-                <p class="project-category">Web — .NET REST API</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="desktop">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="Tito Store POS" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Tito Store POS</h3>
-
-                <p class="project-category">Desktop — Electron, React, Prisma, bilingual AR/EN</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="Warezix" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Warezix</h3>
-
-                <p class="project-category">Web — Next.js warehouse management</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="desktop">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="Ibis Rehab" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ibis Rehab</h3>
-
-                <p class="project-category">Desktop/Mobile — offline clinic management suite</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="mobile">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="EduTrack" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">EduTrack</h3>
-
-                <p class="project-category">Mobile — Expo Router, in progress</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="mobile">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="PulseMe" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">PulseMe</h3>
-
-                <p class="project-category">Mobile — concept, in planning</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-
-      <!--
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select industry
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>EMR</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>RMM</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>WMS</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Social Networking</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Retail/POS</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>EdTech</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="rmm"
+              >
+                <a
+                  href="https://riverbird.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img logo-thumb">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Riverbird-Logo-SVG.svg"
+                      alt="Riverbird Online"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Riverbird Online (Web)</h3>
+
+                  <p class="project-category">Web — React, Next.js</p>
+
+                  <p class="project-description">
+                    RiverSuite RMM — remote monitoring &amp; management platform
+                    for MSPs and IT service providers. Automated asset
+                    inventory, live monitoring, patch management, and
+                    multi-tenant client separation in one dashboard.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="rmm"
+              >
+                <a
+                  href="https://riverbird.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img logo-thumb">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Riverbird-Logo-SVG.svg"
+                      alt="Riverbird Inventory"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Riverbird Inventory (Desktop)</h3>
+
+                  <p class="project-category">Desktop — .NET WPF</p>
+
+                  <p class="project-description">
+                    Desktop client for RiverSuite RMM. Continuously documents IT
+                    assets across a client's infrastructure with minimal setup,
+                    replacing manual documentation with automated,
+                    always-current inventory records.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="rmm"
+              >
+                <a
+                  href="https://riverbird.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img logo-thumb">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Riverbird-Logo-SVG.svg"
+                      alt="Riverbird Mobile"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Riverbird Mobile</h3>
+
+                  <p class="project-category">Mobile — React Native, 2FA</p>
+
+                  <p class="project-description">
+                    On-the-go companion for RiverSuite RMM. Lets IT technicians
+                    check client environments, monitoring alerts, and inventory
+                    status from a phone, secured with two-factor authentication.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="rmm"
+              >
+                <a
+                  href="https://falconsecure.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img logo-thumb">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Falcon-Einzel-Logo.png"
+                      alt="Falcon-Secure Mobile"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Falcon-Secure Mobile</h3>
+
+                  <p class="project-category">Mobile — React Native</p>
+
+                  <p class="project-description">
+                    Mobile app for the Falcon Secure IT security platform.
+                    Automated penetration tests, CVE scanning, and Active
+                    Directory security checks for MSPs, with MFA rollout built
+                    in — view and act on vulnerability findings from anywhere.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="rmm"
+              >
+                <a
+                  href="https://riverbird.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img logo-thumb">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Riverbird-Logo-SVG.svg"
+                      alt="Riverbird WebService"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Riverbird WebService</h3>
+
+                  <p class="project-category">Web — .NET REST API</p>
+
+                  <p class="project-description">
+                    Backend REST API powering the RiverSuite RMM web, desktop,
+                    and mobile clients — handling inventory data, monitoring
+                    events, and multi-tenant client separation.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="retail/pos"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6-mockup.png"
+                      alt="Tito Store POS"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Tito Store POS</h3>
+
+                  <p class="project-category">
+                    Desktop — Electron, React, Prisma, bilingual AR/EN
+                  </p>
+
+                  <p class="project-description">
+                    Offline-first point-of-sale system for a computer
+                    accessories retail store. Sales &amp; printable receipts,
+                    inventory and supplier tracking, customer history, sales
+                    dashboards, one-click backup/restore, and a fully bilingual
+                    Arabic/English RTL interface — all running locally with no
+                    server required.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="wms"
+              >
+                <a
+                  href="https://warehouse-two-mu.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7-mockup.png"
+                      alt="Warezix"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Warezix</h3>
+
+                  <p class="project-category">
+                    Web — Next.js warehouse management
+                  </p>
+
+                  <p class="project-description">
+                    Multi-warehouse management system with zone/location
+                    tracking, inbound and outbound order flows, barcode-scan
+                    picking waves, cycle counts, low-stock reorder alerts,
+                    role-based permissions, and a full audit log.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="emr"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-8-mockup.png"
+                      alt="Ibis Rehab"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Ibis Rehab</h3>
+
+                  <p class="project-category">
+                    Desktop/Mobile — offline clinic management suite
+                  </p>
+
+                  <p class="project-description">
+                    Offline, LAN-based facility management system for a physical
+                    therapy clinic. Real-time patient lobby and room assignment
+                    over WebSockets, a drag-and-drop room map, diagnosis and
+                    exercise plans, and role-based access for doctors,
+                    receptionists, and assistants — no internet connection
+                    needed.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="edtech"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9-mockup.png"
+                      alt="EduTrack"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">EduTrack</h3>
+
+                  <p class="project-category">
+                    Mobile — Expo Router, in progress
+                  </p>
+
+                  <p class="project-description">
+                    Management app for tutoring/education centers. Tracks
+                    student groups, class schedules, parent contacts, session
+                    reservations, payments, and test results in one place.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="social networking"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1-mockup.png"
+                      alt="PulseMe"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">PulseMe</h3>
+
+                  <p class="project-category">
+                    Mobile — React Native, Convex, in progress
+                  </p>
+
+                  <p class="project-description">
+                    Real-time connection app for couples. Partner pairing, a
+                    "pulse" heartbeat tap with push notifications, daily
+                    deep/spicy question cards, voice/photo love letters, and
+                    real-time co-op games like shared drawing and Connect Four.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://maps.google.com/maps?q=Stuttgart%2C%20Germany&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://maps.google.com/maps?q=Stuttgart%2C%20Germany&t=&z=11&ie=UTF8&iwloc=&output=embed"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="from_name"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="reply_to"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <select
+                  name="purpose_choice"
+                  class="form-input"
+                  required
+                  data-form-input
+                  data-purpose-select
+                >
+                  <option value="" disabled selected hidden>
+                    Purpose of contact
+                  </option>
+                  <option value="Asking for a demo">Asking for a demo</option>
+                  <option value="Consulting">Consulting</option>
+                  <option value="Hire for a project">
+                    Hire for a project
+                  </option>
+                </select>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                <select
+                  name="application"
+                  class="form-input"
+                  data-form-input
+                  data-app-select
+                  hidden
+                >
+                  <option value="" disabled selected hidden>
+                    Choose application
+                  </option>
+                  <option value="EduTrack">EduTrack</option>
+                  <option value="Warezix">Warezix</option>
+                  <option value="Ibis Rehab">Ibis Rehab</option>
+                  <option value="Tito Store POS">Tito Store POS</option>
+                </select>
+              </div>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+    <div class="toast" data-toast>
+      <ion-icon data-toast-icon></ion-icon>
+      <p data-toast-text></p>
     </div>
 
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - emailjs link
   -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    // ponytail: replace with your EmailJS public key from emailjs.com dashboard
-    emailjs.init({ publicKey: "YOUR_PUBLIC_KEY" });
-  </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init({ publicKey: "Yfwqm4zJGfig3p9gf" });
+    </script>
 
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

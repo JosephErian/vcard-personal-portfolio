@@ -81,6 +81,32 @@ const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
+// themed toast, replaces native alert()
+const toast = document.querySelector("[data-toast]");
+const toastIcon = document.querySelector("[data-toast-icon]");
+const toastText = document.querySelector("[data-toast-text]");
+let toastTimeout;
+
+const showToast = function (message, type) {
+  clearTimeout(toastTimeout);
+  toast.dataset.type = type;
+  toastIcon.setAttribute("name", type === "error" ? "close-circle" : "checkmark-circle");
+  toastText.textContent = message;
+  toast.classList.add("active");
+  toastTimeout = setTimeout(function () { toast.classList.remove("active"); }, 5000);
+};
+
+// show the "choose application" select only when purpose is "Asking for a demo"
+const purposeSelect = document.querySelector("[data-purpose-select]");
+const appSelect = document.querySelector("[data-app-select]");
+
+purposeSelect.addEventListener("change", function () {
+  const isDemo = purposeSelect.value === "Asking for a demo";
+  appSelect.hidden = !isDemo;
+  appSelect.required = isDemo;
+  if (!isDemo) appSelect.value = "";
+});
+
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
@@ -99,16 +125,33 @@ for (let i = 0; i < formInputs.length; i++) {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
   formBtn.setAttribute("disabled", "");
 
-  // ponytail: replace service/template IDs with your own from emailjs.com dashboard
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form)
+  const purpose = (!appSelect.hidden && appSelect.value)
+    ? purposeSelect.value + " — " + appSelect.value
+    : purposeSelect.value;
+
+  const params = {
+    from_name: form.from_name.value,
+    reply_to: form.reply_to.value,
+    purpose: purpose,
+    message: form.message.value,
+  };
+
+  emailjs.send("service_boxatzo", "template_g0rday8", params)
     .then(function () {
-      alert("Message sent, thanks! I'll get back to you soon.");
+      showToast("Message sent, thanks! I'll get back to you soon.", "success");
       form.reset();
+      appSelect.hidden = true;
+      appSelect.required = false;
     })
     .catch(function (error) {
-      alert("Message failed to send, please try again or email me directly.");
+      showToast("Message failed to send, please try again or email me directly.", "error");
       console.error("EmailJS error:", error);
       formBtn.removeAttribute("disabled");
     });
