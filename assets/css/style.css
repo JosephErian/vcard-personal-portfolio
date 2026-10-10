@@ -269,6 +269,22 @@ article.active {
 
 .download-cv-btn ion-icon { font-size: 18px; }
 
+.cv-download {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cv-download-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+}
+
+.cv-download-label ion-icon { font-size: 18px; }
+
 .article-title::after {
   content: "";
   position: absolute;
@@ -901,6 +917,14 @@ main {
   line-height: 1.6;
 }
 
+.timeline-bullets { padding-left: 18px; }
+
+.timeline-bullets li { list-style: disc; }
+
+.timeline-bullets li::marker { color: var(--orange-yellow-crayola); }
+
+.timeline-bullets li:not(:last-child) { margin-bottom: 4px; }
+
 
 /**
  * skills 
@@ -910,33 +934,40 @@ main {
 
 .skills-list { padding: 20px; }
 
+.skill-group:not(:last-child) { margin-bottom: 20px; }
 
-.skills-item:not(:last-child) { margin-bottom: 15px; }
+.skill-group-title {
+  color: var(--light-gray-70);
+  font-weight: var(--fw-400);
+  margin-bottom: 12px;
+}
 
-.skill .title-wrapper {
+.skill-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.skill-icon {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+  gap: 8px;
+  padding: 12px 6px;
+  background: var(--eerie-black-1);
+  border-radius: 12px;
+  text-align: center;
+  transition: var(--transition-1);
 }
 
-.skill .title-wrapper data {
+.skill-icon:hover { transform: translateY(-3px); }
+
+.skill-icon img { width: 40px; height: 40px; }
+
+.skill-icon span {
   color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
-}
-
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
-}
-
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
+  font-size: var(--fs-8);
+  line-height: 1.3;
 }
 
 
@@ -1642,7 +1673,6 @@ select.form-input option { background: var(--eerie-black-1); color: var(--white-
     left: -43px;
   }
 
-  .skills-item:not(:last-child) { margin-bottom: 25px; }
 
 
 
