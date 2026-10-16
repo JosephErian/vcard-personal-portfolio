@@ -675,7 +675,14 @@ main {
   z-index: -1;
 }
 
-.testimonials-card .testimonials-item-title { margin-bottom: 3px; }
+.testimonials-card .testimonials-item-title { margin-bottom: 3px; margin-left: 0 !important; }
+
+.testimonials-role {
+  display: block;
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  margin-bottom: 4px;
+}
 
 .testimonials-rating {
   color: var(--orange-yellow-crayola);
