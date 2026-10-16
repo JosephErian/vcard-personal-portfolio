@@ -55,6 +55,11 @@
             <h1 class="name" title="Joseph Erian">Joseph Erian</h1>
 
             <p class="title">Software Developer</p>
+
+            <div class="lang-switch" role="group" aria-label="Language">
+              <button type="button" data-lang="en" aria-pressed="true">EN</button>
+              <button type="button" data-lang="de" aria-pressed="false">DE</button>
+            </div>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
@@ -195,19 +200,19 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
+              <button class="navbar-link active" data-nav-link data-target="about">About</button>
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
+              <button class="navbar-link" data-nav-link data-target="resume">Resume</button>
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
+              <button class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button>
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
+              <button class="navbar-link" data-nav-link data-target="contact">Contact</button>
             </li>
           </ul>
         </nav>
@@ -741,31 +746,31 @@
           <section class="projects">
             <ul class="filter-list">
               <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
+                <button class="active" data-filter-btn data-value="all">All</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>EMR</button>
+                <button data-filter-btn data-value="emr">EMR</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>RMM</button>
+                <button data-filter-btn data-value="rmm">RMM</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>WMS</button>
+                <button data-filter-btn data-value="wms">WMS</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Social Networking</button>
+                <button data-filter-btn data-value="social networking">Social Networking</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Retail/POS</button>
+                <button data-filter-btn data-value="retail/pos">Retail/POS</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>EdTech</button>
+                <button data-filter-btn data-value="edtech">EdTech</button>
               </li>
             </ul>
 
@@ -782,31 +787,31 @@
 
               <ul class="select-list">
                 <li class="select-item">
-                  <button data-select-item>All</button>
+                  <button data-select-item data-value="all">All</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>EMR</button>
+                  <button data-select-item data-value="emr">EMR</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>RMM</button>
+                  <button data-select-item data-value="rmm">RMM</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>WMS</button>
+                  <button data-select-item data-value="wms">WMS</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Social Networking</button>
+                  <button data-select-item data-value="social networking">Social Networking</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Retail/POS</button>
+                  <button data-select-item data-value="retail/pos">Retail/POS</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>EdTech</button>
+                  <button data-select-item data-value="edtech">EdTech</button>
                 </li>
               </ul>
             </div>
@@ -1277,6 +1282,7 @@
     - custom js link
   -->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/i18n.js"></script>
 
     <!--
     - ionicon link

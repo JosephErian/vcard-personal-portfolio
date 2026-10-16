@@ -2062,3 +2062,42 @@ select.form-input option { background: var(--eerie-black-1); color: var(--white-
   .timeline-text { max-width: 700px; }
 
 }
+
+/**
+ * #language switch
+ */
+
+.lang-switch {
+  display: flex;
+  gap: 4px;
+  width: max-content;
+  margin-top: 10px;
+  padding: 3px;
+  background: var(--onyx);
+  border-radius: 8px;
+}
+
+.lang-switch button {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  padding: 2px 10px;
+  border-radius: 6px;
+  transition: var(--transition-1);
+}
+
+.lang-switch button:is(:hover, :focus-visible) { color: var(--white-2); }
+
+.lang-switch button[aria-pressed="true"] {
+  color: var(--smoky-black);
+  background: var(--orange-yellow-crayola);
+}
+
+@media (min-width: 1250px) {
+  .lang-switch { margin-inline: auto; }
+}
+
+/* German capitalization rules differ from English title case: show the text as written */
+:root[lang="de"] :is(.h2, .h3, .h4, .h5, .select-item button, .project-title, .form-btn) {
+  text-transform: none;
+}
